@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chaitanyashankhapal-cpu.github.io/business-website/sitemap.xml
