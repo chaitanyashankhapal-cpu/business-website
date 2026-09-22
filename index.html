@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Cafe | Fresh Food & Coffee</title>
+
+    <meta name="description" content="Urban Cafe - Fresh food, coffee and desserts. Visit us or order on WhatsApp.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fafafa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+                        url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=80")
+                        center/cover;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: #25d366;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #111;
+        }
+
+        section {
+            padding: 70px 6%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .menu {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .about {
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero {
+                min-height: 65vh;
+            }
+
+            section {
+                padding: 55px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Urban Cafe</div>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Good Food. Good Coffee.</h1>
+
+        <p>
+            Freshly prepared food, handcrafted coffee and delicious desserts
+            in the heart of the city.
+        </p>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/919999999999"
+           target="_blank">
+            Order on WhatsApp
+        </a>
+
+        <a class="btn btn-secondary" href="#menu">
+            View Menu
+        </a>
+    </div>
+</section>
+
+<section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80"
+                 alt="Burger">
+
+            <div class="card-content">
+                <h3>Classic Burger</h3>
+                <p>Juicy burger with fresh vegetables and house sauce.</p>
+                <div class="price">₹199</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+                 alt="Coffee">
+
+            <div class="card-content">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso topped with smooth steamed milk.</p>
+                <div class="price">₹129</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+                 alt="Chocolate Cake">
+
+            <div class="card-content">
+                <h3>Chocolate Cake</h3>
+                <p>Soft chocolate cake with creamy chocolate frosting.</p>
+                <div class="price">₹159</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-content">
+
+        <h2 class="section-title">About Urban Cafe</h2>
+
+        <p>
+            We believe great food doesn't need to be complicated.
+            Our team prepares fresh food and quality coffee every day
+            using carefully selected ingredients.
+        </p>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Visit Us</h2>
+
+    <div class="contact-info">
+
+        <p><strong>Address:</strong> Main Road, Mumbai, Maharashtra</p>
+
+        <p><strong>Phone:</strong> +91 99999 99999</p>
+
+        <p><strong>Opening Hours:</strong> 10:00 AM – 10:00 PM</p>
+
+        <br>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/919999999999"
+           target="_blank">
+            WhatsApp Us
+        </a>
+
+        <a class="btn btn-secondary"
+           href="https://www.google.com/maps"
+           target="_blank">
+            Get Directions
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Urban Cafe. All Rights Reserved.
+</footer>
+
+</body>
+</html>
